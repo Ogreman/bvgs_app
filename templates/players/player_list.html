@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<ul>
+{% for player in object_list %}
+    <li>{{ player }}</li>
+{% endfor %}
+</ul>
+{% endblock %}
