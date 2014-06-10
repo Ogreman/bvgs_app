@@ -1,4 +1,3 @@
-django_heroku_starter
+Django App for BVGS
 =====================
 
-Skeleton project for Django projects hosted on Heroku
