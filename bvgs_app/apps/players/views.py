@@ -1,13 +1,24 @@
 # Create your views here.
-from django.views.generic import View, ListView
+from django.views import generic
 from django.http import HttpResponse
 
 from .models import Player
-
-class SampleHomeView(View):
-	def get(self, request, *args, **kwargs):
-		return HttpResponse("Hello world")
+from .forms import PlayerForm
 
 
-class PlayerListView(ListView):
+class PlayerListView(generic.ListView):
     model = Player
+
+
+class PlayerDetailView(generic.DetailView):
+    model = Player
+
+
+class PlayerCreateView(generic.CreateView):
+    model = Player
+    form = PlayerForm
+
+
+class PlayerUpdateView(generic.UpdateView):
+    model = Player
+    form = PlayerForm

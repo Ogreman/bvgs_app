@@ -116,6 +116,7 @@ BASE_APPS = (
 
 PROJECT_APPS = (
     'bvgs_app.apps.players',
+    'bvgs_app.apps.events',
 )
 
 THIRD_PARTY_APPS = (
