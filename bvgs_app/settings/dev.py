@@ -5,7 +5,7 @@ TEMPLATE_DEBUG = DEBUG
 
 DATABASES['default'] = {
     'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'mysql', 'sqlite3' or 'oracle'.
-    'NAME': 'dev.db',                      # Or path to database file if using sqlite3.
+    'NAME': BASE_DIR.child('dev.db'),                      # Or path to database file if using sqlite3.
 }
 
 INSTALLED_APPS += (
